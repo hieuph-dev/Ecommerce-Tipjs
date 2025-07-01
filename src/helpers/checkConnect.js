@@ -1,3 +1,4 @@
+// Theo dõi số lượng kết nối và kiểm tra tình trạng quá tải.
 'use strict'
 
 const mongoose = require('mongoose')

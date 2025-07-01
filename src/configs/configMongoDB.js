@@ -1,3 +1,4 @@
+// Cấu hình môi trường (dev hoặc pro) cho kết nối MongoDB.
 'use strict'
 
 // level 0
@@ -25,6 +26,8 @@ const pro = {
         name: process.env.PRO_DB_NAME || 'Ecommerce_TipJS'
     }
 }
+
+// => dev có thể sử dụng database cục bộ, còn pro thường kết nối đến database trên cloud.
 
 const config = { dev, pro }
 const env = process.env.NODE_ENV || 'dev'
